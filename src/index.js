@@ -1,14 +1,30 @@
 import './style.css';
-import Background from './background.jpeg';
+import loadHome from './home';
+import loadMenu from './menu';
+import loadContact from './contact';
 
- function content() {
-  const mainElement = document.createElement('div');
-  mainElement.classList.add('main');
-  const myImg = new Image();
-  myImg.src = Background;
+loadHome();
 
-  mainElement.append(myImg);
+const homeBtn = document.querySelector('.home-tab'),
+      menuBtn = document.querySelector('.menu-tab'),
+      contactBtn = document.querySelector('.contact-tab');
 
-  return mainElement;
+homeBtn.addEventListener('click', () => {
+  clear();
+  loadHome();
+})
+
+menuBtn.addEventListener('click', () => {
+  clear();
+  loadMenu();
+})
+
+contactBtn.addEventListener('click', () => {
+  clear();
+  loadContact();
+})
+
+const clear = () => {
+  let currentPage = document.querySelector('.container');
+  currentPage.remove();
 };
-document.body.appendChild(content());
