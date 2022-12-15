@@ -1,0 +1,111 @@
+
+html {
+  color: #484f4f;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+body > * {
+  box-sizing: border-box;
+}
+
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #8ca3a3;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+nav button {
+  height: 100%;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.25em;
+  padding: 0 30px;
+}
+
+nav button:hover {
+  cursor: pointer;
+}
+
+footer {
+  height: 40px;
+  max-width: 100%;
+  color: white;
+  background-color: #8ca3a3;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+li {
+  padding-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.section {
+  background-image: url("../img/background.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 0;
+}
+
+.container {
+  background-color: #c8c3cc;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 20vw;
+  padding: 3rem 4vw;
+}
+
+.menu {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin: 1rem 1vw;
+  padding: 1.25rem 4vw;
+}
+
+.home {
+  background-color: #8ca3a3;
+  border-radius: 20px;
+  margin: 2rem 4vw;
+  padding: 1rem 2vw;
+}
+
+.food-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
